@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am here</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 20px;
+            font-family: 'Helvetica', sans-serif;
+        }
+        h1 {
+            display: none; /* Ocultar el encabezado */
+        }
+        button {
+            font-size: 24px; /* Tamaño más grande */
+            font-weight: bold; /* Negrita */
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #fraseRomantica {
+            font-size: 18px; /* Tamaño más grande */
+            font-weight: bold; /* Negrita */
+        }
+    </style>
+</head>
+<body>
+    <h1>I am here</h1>
+    <p>Presiona aquí:</p>
+    <button onclick="mostrarFrase()">❤️</button>
+    <p id="fraseRomantica"></p>
+
+    <script>
+        function mostrarFrase() {
+            const frasesRomanticas = [
+            "Eres mi código fuente de felicidad en esta vida" ,
+            "Nuestro amor es como un algoritmo perfecto: complejo, eficiente y siempre en constante evolución" ,
+            "Eres el bug que nunca quiero corregir en mi vida" ,
+            "Si mi vida fuera un bucle, no cambiaría nada; seguiría eligiéndote una y otra vez" ,
+            "Eres el lenguaje que mi corazón aprendió a programar" ,
+            "Como un buen código, nuestra relación es elegante, eficiente y sin bugs" ,
+            "Eres mi función principal en este viaje llamado amor" ,
+            "Eres el booleano que cambió mi estado a 'verdadero' para siempre" ,
+            "A tu lado, mi corazón nunca experimenta un tiempo de inactividad" ,
+            "Eres el parámetro perfecto en la función de mi vida" ,
+            "Contigo quiero seguir aprovechando cada bug",
+            "ALERTA: Despues de ejecutar el contrato -Relación- no hay vuelta atrás. Así que respira y aguantame",
+            "Ya deja de jugar y ponte a programar, te estoy viendo 😑",
+            "Más fácil le encuentras solución a ese código que a dejarme",
+            "No te quejes, que somos iguales y así me quieres",
+            "Te Amo",
+            "Lo mas problable es que ahora me encuentre pensando en ti tanto como tú en mi",
+            "Tu amor es mi canción favorita, y cada día descubro nuevas estrofas que hacen latir mi corazón más fuerte",
+            "Eres el café que endulza mis mañanas y la melodía que acompaña mis noches",
+            "Cada dia contigo es como encontrar el lenguaje perfecto qe es capaz de programar toda mi vida llena de felicidad",
+            "Nuestro amor es como tu juego favorito: emocionante, lleno de sorpresas y difícil de poner en pausa",
+            "Contigo, descubrí que el amor es un viaje emocionante, no solo un destino",
+            "Eres la pieza que faltaba en mi rompecabezas, de nada sirven las 999 que ya tengo si tu no formas parte de ella",
+            "Tu sonrisa ilumina mi vida más que el sol, la luna y las estrellas. Gracias por ser mi fuente constante de felicidad",
+            "En nuestro viaje juntos, cada desafío se convierte en una aventura, y cada momento, una historia inolvidable",
+            "Tu amor es como un refugio cálido en medio de la tormenta, siempre reconfortante y seguro",
+            "Nada mejor que uno de tus apapachos, lastima que estemos lejos, pero me debes un par al verme",
+            "A tu lado el tiempo se detiene, y cada instante se convierte en una eternidad llena de amor",
+            "Eres mi cómplice en la vida, el compañero perfecto para este emocionante viaje llamado realidad",
+            "Tu amor es mi lugar seguro en un mundo lleno de altibajos",
+            "Cada día contigo es una nueva oportunidad para enamorarnos aún más. Gracias por hacer cada día especial",
+            "Eres mi canción secreta y mi melodía favorita que tarareo cada vez que te pienso",
+            "Nuestro amor es como un buen vino, mejora con el tiempo y se vuelve más profundo con cada dia que pasa",
+            "Eres mi paz en medio del caos, el faro que guía mis pensamientos en la oscuridad",
+            "Tú y yo, una combinación perfecta como el café y la lluvia en una tarde acogedora",
+            "A tu lado, las estrellas parecen más brillantes y los problemas, menos complicados",
+            "Eres la inspiración detrás de mis sueños, aquello que da color a mi mundo en blanco y negro",
+            "Nuestro amor es como un libro de aventuras, lleno de páginas emocionantes las cuales ansío ver una por una",
+            "Eres mi mejor amigo, amante y compañero, la combinación perfecta que nunca supe que necesitaba pero que siempre quiero",
+            "Si tienes un mal solo peinsa en tu esposita, yo pienso en ti y se me alegra el dia",
+            "En las buenas, en las malas y hasta en las imposibles, pero contigo"
+            ];
+
+            const fraseAleatoria = frasesRomanticas[Math.floor(Math.random() * frasesRomanticas.length)];
+            document.getElementById('fraseRomantica').innerHTML = fraseAleatoria;
+        }
+    </script>
+</body>
+</html>
